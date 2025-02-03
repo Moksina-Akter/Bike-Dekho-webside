@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daisy ui</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+   <!-- ...daisy+tailwind link...  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- ......custom tailwind......... -->
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'background-color': 'gray',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- ...custom css.... -->
+<style>
+
+    .font-poppins{
+        font-family: "Poppins", serif;
+    }
+    .color{
+        background-color: #E76F51;
+
+    }
+</style>
+
+</head>
+<body  class="font-poppins">
+  
+  <header>
+    <!-- .........nav......... -->
+      <nav class="max-w-6xl mx-auto">
+        <div class="navbar bg-rose-100">
+            <div class="navbar-start flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  
+                
+                    <ul class="p-2">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-4xl font-bold">Bike Dekho</a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+                
+                
+                    
+              </ul>
+            </div>
+            <div >
+              <a class="btn color px-12 py-3 text-white">Login</a>
+            </div>
+          </div>
+      </nav>
+
+
+      <!-- ..........banner......... -->
+    <div class="banner max-w-6xl mx-auto mt-5 h">
+
+        <div class="carousel w-full bg-background-color">
+
+            <!-- slide1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="flex flex-col md:flex-row lg:flex-row gap-11 px-24 py-10">
+                <div class="space-y-10">
+                   <h1 class="text-3xl md:text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1> 
+                   <p></p>
+                   <button class="color px-12 py-3 text-white rounded-lg">Purchase  </button>
+                </div>
+                <div>
+                  <img src="./pic3.jpeg" alt="">
+                </div>
+              </div>
+
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <!-- slide2 -->
+
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col md:flex-row lg:flex-row gap-11 px-24 py-10">
+                    <div class="space-y-10">
+                       <h1 class="text-3xl md:text-6xl font-bold">Ride-on R15 V4 <br>with Smile</h1> 
+                       <p></p>
+                       <button class="color px-12 py-3 text-white rounded-lg">Purchase  </button>
+                    </div>
+                    <div>
+                      <img src="./pic4.jpeg" alt="">
+                    </div>
+                  </div>
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <!-- slide3 -->
+
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <!-- slide4 -->
+
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+  </header>  
+        
+
+
+
+
+
+</body>
+</html>
